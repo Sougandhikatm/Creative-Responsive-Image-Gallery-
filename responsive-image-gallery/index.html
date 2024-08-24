@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Responsive Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/image1.jpeg" alt="Image 1" loading="lazy">
+                <div class="caption">Maldives</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image2.jpeg" alt="Image 2" loading="lazy">
+                <div class="caption">Life</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image3.jpeg" alt="Image 3" loading="lazy">
+                <div class="caption">Sunrise</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image4.jpeg" alt="Image 4" loading="lazy">
+                <div class="caption">Japan</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image5.jpeg" alt="Image 5" loading="lazy">
+                <div class="caption">Quotes</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image6.jpeg" alt="Image 6" loading="lazy">
+                <div class="caption">Quotes</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/image7.jpeg" alt="Image 7" loading="lazy">
+                <div class="caption">Quotes</div>
+            </div>
+            
+        </div>
+        <button class="nav prev" onclick="navigateGallery(-1)">&#10094;</button>
+        <button class="nav next" onclick="navigateGallery(1)">&#10095;</button>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Lightbox Image">
+        <div id="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
